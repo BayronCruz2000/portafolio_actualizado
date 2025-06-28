@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: rgb(32, 32, 225);
+  --primary-dark-color: darkblue;
+  --primary-lite-color: lightblue;
+  --primary-text-color: #fff;
+  --secondary-text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-image {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.search {
+  margin: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  background: var(--primary-dark-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: var(--primary-lite-color);
+  color: var(--secondary-text-color);
+}
+
+.profile {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.profile-image {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .header, .card .content, .card .footer {
+  padding: 1rem;
+}
+
+.card strong {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.rounded {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rounded:hover {
+  background: var(--primary-dark-color);
+}
+
+.testimonial {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid var(--primary-lite-color);
+}
+
+form {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input, .form-control select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+
