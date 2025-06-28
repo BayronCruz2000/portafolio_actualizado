@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Insertamos el HTML completo dentro del div#app
+
 document.querySelector('#app').innerHTML = `
 <header>
   <div class="brand">
